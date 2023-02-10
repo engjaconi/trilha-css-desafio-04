@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px repeat(2, 400px) 100px;
+            grid-template-areas: 
+            "header header header header"
+            "navbar main-content main-content main-content"
+            "navbar content-1 content-2 content-3"
+            "navbar footer footer footer"
+            ;
+        }
+
+        header, nav, section {
+            padding-top: 30px;
+        }
+
+        header {
+            background-color: lightblue;
+            grid-area: header;
+        }
+        nav {
+            background-color: lightcoral;
+            grid-area: navbar;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        li a {
+            color: black;
+        }
+
+        .main-content {
+            background-color: lightgray;
+            grid-area: main-content;
+        }
+
+        .content-1 {
+            background-color: lightgreen;
+            grid-area: content-1;
+        }
+
+        .content-2 {
+            background-color: lightcyan;
+            grid-area: content-2;
+        }
+
+        .content-3 {
+            background-color: lightpink;
+            grid-area: content-3;
+        }
+
+        footer {
+            background-color: lightslategray;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header Content
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+        </ul>
+    </nav>
+    <section class="main-content">Main Content</section>
+    <section class="content-1">Content-1</section>
+    <section class="content-2">Content-2</section>
+    <section class="content-3">Content-3</section>
+    <footer>Footer</footer>
+</body>
+</html>

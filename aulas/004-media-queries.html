@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        @media print {
+            body {
+                background-color: lightgray;
+                color: red;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Media</h1>
+
+    <p>Para ver os estilos aplicados para a media print, abra a página pelo menu de inspecionar e habilite a renderização print.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum neque aperiam saepe doloremque eveniet, exercitationem quis vel delectus recusandae accusamus, at necessitatibus magni libero quas deserunt eos, nisi minus sunt.</p>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        li a  {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav li {
+            background-color: lightgreen;
+            padding: 8px;
+            border-radius: 4px;
+            list-style: none;
+        }
+
+        #skills {
+            background-color: lightgreen;
+            border: 1px solid green;
+            border-radius: 4px;
+        }
+
+        #skills li{
+            list-style: decimal;
+        }
+
+        #education {
+            background-color: lightblue;
+            border: 1px solid blue;
+            border-radius: 4px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        @media screen and (min-width: 720px) {
+            main {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 24px;
+                max-width: 1200px;
+                margin: 16px auto;
+            }
+
+            #presentation {
+                width: 500px;
+            }
+
+            #skills, #education {
+                flex: 1;
+            }
+
+            nav ul {
+                flex-direction: row;
+            }
+
+            nav li {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Conheça meu trabalho</a></li>
+                <li><a href="#">LinkdIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentation">
+            <h1>Tiago Jaconi</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero, ad nisi commodi iste officia, adipisci laborum ex quod similique, mollitia omnis corporis error voluptates fugiat totam cum voluptatibus tenetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero, ad nisi commodi iste officia, adipisci laborum ex quod similique, mollitia omnis corporis error voluptates fugiat totam cum voluptatibus tenetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero, ad nisi commodi iste officia, adipisci laborum ex quod similique, mollitia omnis corporis error voluptates fugiat totam cum voluptatibus tenetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero, ad nisi commodi iste officia, adipisci laborum ex quod similique, mollitia omnis corporis error voluptates fugiat totam cum voluptatibus tenetur?</p>
+        </section>
+
+        <section id="skills">
+            <ul>
+                <li>HtML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node JS</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <ul>
+                <li>Técnico em Eletrotécnica</li>
+                <li>Técnico em Mecânica</li>
+                <li>Graduando em Eng. da Computação</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
