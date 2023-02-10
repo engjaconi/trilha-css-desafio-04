@@ -116,7 +116,7 @@ header button:hover {
         padding: 94px 25%;
         text-align: center;
     }
-    
+
     .header__buttons {
         display: flex;
         flex-direction: row;
@@ -149,7 +149,7 @@ header button:hover {
         line-height: 54px;
     }
 
-    
+
     section:last-of-type {
         padding: 40px 239px;
         flex-direction: column;
@@ -157,7 +157,7 @@ header button:hover {
         text-align: center;
     }
 
-    section:last-of-type img{
+    section:last-of-type img {
         width: 100%;
         order: 2;
     }
